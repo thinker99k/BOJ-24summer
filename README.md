@@ -1,8 +1,6 @@
 # BOJ-24summer
 24.06.16 : 815 (Gold V) -> ??
 
-<img src="https://raw.githubusercontent.com/kitsune03k/BOJ/main/GoldV.png">
-
 ## 1. 맞은 문제
 문제번호
 
