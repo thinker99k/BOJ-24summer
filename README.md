@@ -1,5 +1,5 @@
 # BOJ-24summer
-24.02.05 : 0 (Not Ranked) -> 24.03.11 : 815 (Gold V)
+24.06.16 : 815 (Gold V) -> ??
 
 <img src="https://raw.githubusercontent.com/kitsune03k/BOJ/main/GoldV.png">
 
