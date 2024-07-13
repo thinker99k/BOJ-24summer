@@ -1,18 +1,18 @@
+*
+!*.*
+!*/
+
 # windows
 *.exe
 
 # mac
 .DS_Store
 
-
 # gcc
 *.gch
 a.out
 
-# build
-cmake-build-debug/
-
 # ide
 .idea/
 *.dSYM/
-
+/cmake-build-debug/
