@@ -3,16 +3,16 @@
 !*/
 
 # windows
-*.exe
+/*.exe
 
 # mac
-.DS_Store
+/.DS_Store
 
 # gcc
-*.gch
-a.out
+/*.gch
+/a.out
 
 # ide
-.idea/
-*.dSYM/
+/.idea/
+/*.dSYM/
 /cmake-build-debug/
