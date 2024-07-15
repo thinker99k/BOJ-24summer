@@ -27,6 +27,16 @@ bool val(int pos){
     return true;
 }
 
+void show(){
+    for(int i=0; i<=80; i++){
+        printf("%d ", steps[i]);
+        if(i%10 == 9){
+            printf(" | ");
+        }
+    }
+    printf("\n");
+}
+
 int bfs(){
     queue<int> q;
 
@@ -69,6 +79,8 @@ int bfs(){
                 checked[pp*2] = true;
                 nextloops++;
             }
+
+            show();
         }
         phase++;
         loops = nextloops;
