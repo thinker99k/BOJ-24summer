@@ -10,14 +10,14 @@ typedef struct {
 
 int n, m, w;
 
-warp arr[100];
-bool visited[100];
-bool checked[100];
-int steps[100];
+warp arr[101];
+bool visited[101];
+bool checked[101];
+int steps[101];
 
 bool val(int pos) {
     // 1. 범위 맞나 검사
-    if (pos < 0 || pos >= 100) {
+    if (pos < 1 || pos > 100) {
         return false;
     }
     // 2. 방문 했나 검사
@@ -45,7 +45,7 @@ void show();
 void bfs() {
     queue<int> q;
 
-    int start = 0;
+    int start = 1;
     q.push(start);
 
     int phase = 0;
@@ -54,6 +54,8 @@ void bfs() {
     while (true) {
         int nextloops = 0;
 
+        cout << "loops: " << loops << endl;
+
         for (int i = 0; i < loops; i++) {
             int pp = q.front();
             q.pop();
@@ -61,12 +63,14 @@ void bfs() {
 
             steps[pp] = phase;
 
+            cout << "approaching " << pp << endl;
+
             int ppp;
 
             for (int j = 1; j <= 6; j++) {
                 if (val(pp + j)) {
-                    if(arr[pp+j].w){
-                        visited[pp+j] = true;
+                    if (arr[pp + j].w) {
+                        visited[pp + j] = true;
                     }
                     checked[pp + j] = true;
                     ppp = move(pp + j);
@@ -87,10 +91,22 @@ void bfs() {
     }
 }
 
-void show(){
-    for(int i=0; i<100; i++){
-        printf("%3d ", steps[i]);
-        if(i%10 == 9)
+void show() {
+    for (int i = 1; i <= 100; i++) {
+        printf("%3d", steps[i]);
+        if (i % 10 == 0)
+            printf("|");
+    }
+    printf("\n");
+
+    for (int i = 1; i <= 100; i++) {
+        if(arr[i].w){
+            printf("  w");
+        }
+        else {
+            printf("   ");
+        }
+        if (i % 10 == 0)
             printf("|");
     }
     printf("\n");
@@ -108,5 +124,6 @@ int main() {
     }
 
     bfs();
-    cout << steps[99];
+
+    cout << steps[100];
 }
