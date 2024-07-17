@@ -1,5 +1,6 @@
 #include <iostream>
 #include <queue>
+#include <cstring>
 
 using namespace std;
 
@@ -32,7 +33,7 @@ void bfs() {
     while (true) {
         size_t sz = q.size();
 
-        for (int z = 0; z < sz; z++) {
+        for (int z = 0; z < (int)sz; z++) {
             int p = q.front();
             q.pop();
 
