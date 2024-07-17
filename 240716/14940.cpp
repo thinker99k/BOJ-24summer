@@ -78,7 +78,7 @@ void bfs() {
 }
 
 int main() {
-    memset(steps, -1, 1000 * 1000);
+    memset(steps, -1, sizeof(int)*1000 * 1000);
 
     cin >> lrow >> lcol;
 
