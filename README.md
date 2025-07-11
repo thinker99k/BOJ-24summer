@@ -1,5 +1,5 @@
 # BOJ-24summer
-<img src="https://raw.githubusercontent.com/kitsune03k/BOJ-24summer/main/Gold4.png">
+<img src="https://raw.githubusercontent.com/kitsune03k/BOJ-24summer/main/Gold4.png" width="400px">
 24.07.14 : 815 (Gold V) -> 24.08.09 : 1026(Gold IV)
 
 ## 1. 맞은 문제
